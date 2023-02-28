@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import {ApiFetch} from './Component/ApiFetch'
+import axios from 'axios'
+import './Component/ApiFetch.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [product, setProduct] = useState([]);
+  const getProduct = async () => {
+    const data = await axios.get('https://dummyjson.com/products/');
+    if (data.status === 200) {
+      setProduct(data.data.products)
+    }
+  };
+  useEffect(() => {
+    getProduct() 
+  }, [])
+
+
+    return (
+      <div className='component'>
+      
+        <ApiFetch product={product} />
+  
+
+      </div>
+      );
+
 }
 
 export default App;
