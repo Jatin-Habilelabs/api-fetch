@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 export const ApiFetch = (props) => {
     const { product } = props;
@@ -13,7 +13,7 @@ export const ApiFetch = (props) => {
                     <div className='productImage'>
                         <div className='Image' style={{ backgroundImage: `url(${data.thumbnail})` }}>
 
-                        </div>~
+                        </div>
                     </div>
                     <div className='productInfo'>
                         <p className='productTitle'>{data.title}</p>

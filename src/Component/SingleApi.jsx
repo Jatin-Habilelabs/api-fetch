@@ -32,7 +32,7 @@ export const SingleApi = () => {
                         <p className='productTitle'>{singleproduct.brand}</p>
                         <div className='productDetails'>
                             <div className="productRating">
-                                
+
 
                                 <span>Rating : {(Math.round(singleproduct.rating))}⭐</span>
                             </div>
@@ -55,10 +55,10 @@ export const SingleApi = () => {
                         </span>
                     </div>
                     <div className='aboutBrand'>
-                        <div><p className='aboutProductTitle'>About Our Product : </p>
-                           
-                                </div>
-                        <div> <p>{singleproduct.description}</p></div>
+
+                        <p className='aboutProductTitle'>About Our Product :  </p>
+                      
+                        <p className='aboutProductDescription'>{singleproduct.description}</p>
                     </div>
                 </div>
             </div>

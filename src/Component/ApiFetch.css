@@ -6,15 +6,20 @@
     box-shadow: 0px 0px 5px rgb(20, 19, 19);
     border-radius: 10px;
 }
-.product{
+
+.product {
+    height: 575px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 40px;
+    background-color: rgba(253, 246, 237, 0.438);
 }
+
 .productImage {
     width: 300px;
     height: 250px;
+    border: 1px solid black;
 }
 
 .Image {
@@ -23,8 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
-
+    overflow: hidden;
 }
 
 .component {
@@ -40,7 +44,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100px;
+    padding: 15px;
+    height: 150px;
+    gap: 1rem;
 }
 
 .productDetails {
@@ -49,33 +55,59 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    height: 50px;
 }
 
-.productBuy{
+.productBuy {
     width: 100px;
     height: 30px;
     border-radius: 10px;
     background-color: rgb(185, 199, 199);
 }
-.brandName{
+
+.brandName {
     display: flex;
     font-size: 30px;
+    justify-content: center;
     align-items: center;
 }
-.brandName span{
+
+.brandName span {
     padding: 10px;
     font-weight: bold;
 }
-.aboutBrand{
+
+.aboutData {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.aboutBrand {
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 200px;
-    border: 1px solid  red;
+    box-shadow: rgba(100, 100, 111, 0.2) 10px 7px 29px 0px;
+    gap: 1rem;
     text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: rgb(219, 224, 224);
+
 }
-.aboutProductTitle{
+
+.aboutProductTitle {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.aboutProductTitle {
     height: 30px;
-    background-color: aqua;
-    border:1px solid black ;
+    border-radius: 5px;
+    background-color: rgba(87, 110, 102, 0.726);
+    color: antiquewhite;
 }
